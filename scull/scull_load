@@ -5,7 +5,7 @@ device="scull"
 mode="664"
 
 kernel_version=$(uname -r)
-modules_dir="/lib/modules/$kernel_version"
+modules_dir="/lib/modules/$kernel_version/extra"
 
 # Group: since distributions do it differently, look for wheel or use staff
 if grep -q '^staff:' /etc/group; then
